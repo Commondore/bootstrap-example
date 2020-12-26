@@ -1,0 +1,39 @@
+:root {
+  --main-color: #506a85;
+  --second-color: #00bc9c;
+  --text-color: #73879c;
+  --font: "SourceSansPro";
+}
+
+@font-face {
+  font-family: var(--font);
+  src: url("../fonts/SourceSansPro/SourceSansPro-Regular.woff") format("woff"), url("../fonts/SourceSansPro/SourceSansPro-Regular.woff2") format("woff2");
+  font-weight: normal;
+}
+@font-face {
+  font-family: var(--font);
+  src: url("../fonts/SourceSansPro/SourceSansPro-Bold.woff") format("woff"), url("../fonts/SourceSansPro/SourceSansPro-Bold.woff2") format("woff2");
+  font-weight: 700;
+}
+@font-face {
+  font-family: var(--font);
+  src: url("../fonts/SourceSansPro/SourceSansPro-Black.woff") format("woff"), url("../fonts/SourceSansPro/SourceSansPro-Black.woff2") format("woff2");
+  font-weight: 900;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font: 1rem/1.2 var(--font), sans-serif;
+  color: var(--text-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=main.css.map */

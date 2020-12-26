@@ -1,0 +1,14 @@
+# npm
+node_modules/
+package-lock.json
+
+
+# sass
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+
+# System Files
+.DS_Store
+Thumbs.db
