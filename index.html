@@ -8,8 +8,109 @@
   <script src="./node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
 </head>
 <body>
-  <!-- code here -->
+
+  <section class="top">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-7 text-center text-md-start mb-3 mb-md-0">
+          <div class="contact">
+            <a href="mailto:info@reen.com" class="contact__link">
+              <i class="fas fa-envelope"></i>
+              info@reen.com
+            </a>
+            <a href="tel:+996550533351" class="contact__link">
+              <i class="fas fa-mobile-alt"></i>
+              +996 (550) 533351
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-5 text-center text-md-end">
+          <nav class="social">
+            <a href="#" class="social__link">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#" class="social__link">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social__link">
+              <i class="fab fa-pinterest"></i>
+            </a>
+            <a href="#" class="social__link">
+              <i class="fab fa-vk"></i>
+            </a>
+            <a href="#" class="social__link">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <nav class="navbar navbar-expand-lg navbar-light py-4">
+    <div class="container">
+      <a href="#" class="navbar-brand">
+        <img src="img/logo.png" alt="" class="logo">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#hidden-nav"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse collapse" id="hidden-nav">
+        <div class="navbar-nav mx-md-auto my-3">
+          <a href="#" class="nav-link">Home</a>
+          <a href="#" class="nav-link">About</a>
+          <a href="#" class="nav-link">Team</a>
+          <a href="#" class="nav-link">Contact</a>
+        </div>
+
+        <form class="d-flex search ml-auto">
+          <input class="search__input me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="search__btn" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+
+      </div>
+
+    </div>
+  </nav>
+
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/slider.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/slider.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/slider.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
   <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <script>
+    const form = document.querySelector('.search');
+    const input = document.querySelector('.search__input');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      input.classList.toggle('show');
+    })
+  </script>
 </body>
 </html>

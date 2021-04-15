@@ -1,6 +1,9 @@
 @function rem($px)
 	@return $px / 16px + 0rem
 
+@function em($px)
+	@return $px / 16px + 0em
+
 =phone
 	@media screen and (min-width: $phone)
 		@content

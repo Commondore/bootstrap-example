@@ -1,0 +1,35 @@
+.top
+	padding: rem(13px) 0
+	background: #f5f7f9
+	border-bottom: 1px solid #e5e9ed
+
+	a
+		color: $mainColor
+		text-decoration: none
+		margin: 0 rem(10px)
+
+.nav-link
+	font-weight: 900
+	text-transform: uppercase
+
+	+tablet
+		margin: 0 rem(21px)
+
+
+.search
+
+	&__btn
+		border: none
+		background: none
+
+	&__input
+		border: none
+		border-bottom: 1px solid $mainColor
+		padding: 0
+		transition: .4s
+		+tablet
+			max-width: 0
+			width: 100%
+
+		&.show
+			max-width: 300px
